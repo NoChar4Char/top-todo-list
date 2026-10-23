@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" src="/src/style.css">
+  <script type="module" crossorigin src="/your-repo-name/assets/index-7dBKAY-L.js"></script>
+  <link rel="stylesheet" crossorigin href="/your-repo-name/assets/index-C3tI2__g.css">
+</head>
+<body>
+  <header>
+    <h1>Book List</h1>
+    <button class="book-button all-buttons">Add Book</button>
+  </header>
+  <hr>
+  <main>
+    <section class="todo-container"></section>
+    <!-- TEMPLATE -->
+    <dialog class="prompt-dialog">
+      <form method="dialog">
+        <fieldset class="form-fieldset">
+          <legend class="form-heading">Add Your Task</legend>
+          <label class="form-label label-name">Project Name: <br> <input type="text" name="name" class="form-input input-name" minlength="1" maxlength="100" required> </label>
+          <label class="form-label label-desc">Project Name: <br> <textarea name="desc" class="form-input input-desc"></textarea></label>
+          <label class="form-label label-date">Set a Date: <br> <input type="date" name="name" class="form-input input-date"></label>
+          <label class="form-label label-priority">Set a Date: <br>
+            <select name="priority" class="form-input input-priority">
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </label>
+          <button type="submit" class="all-buttons">Add Task</button>
+        </fieldset>
+      </form>
+    </dialog>
+    </section>
+    <template class="task-template">
+      <div class="one-task">
+        <div class="task-info">
+          <div class="priority-circle"></div>
+          <div class="title-and-date">
+            <p class="title"></p>
+            <p class="date"></p>
+          </div>
+          <div class="view-details">
+            <div class="outer">
+              <svg class="svg-view-details" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>chevron-down</title>
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
+              <h3 class="text-view-details">View Details</h3>
+            </div>
+            <p class="details-inner"></p>
+          </div>
+          <svg class="change-svg edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>square-edit-outline</title>
+            <path d="M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19H5V5H12V3H5M17.78,4C17.61,4 17.43,4.07 17.3,4.2L16.08,5.41L18.58,7.91L19.8,6.7C20.06,6.44 20.06,6 19.8,5.75L18.25,4.2C18.12,4.07 17.95,4 17.78,4M15.37,6.12L8,13.5V16H10.5L17.87,8.62L15.37,6.12Z" />
+          </svg>
+          <svg class="change-svg delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>trash-can-outline</title>
+            <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+          </svg>
+        </div>
+    </template>
+  </main>
+</body>
+</html>
